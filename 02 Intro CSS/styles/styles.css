@@ -1,0 +1,341 @@
+/* Css.
+Significa hojas de estilo en cascada y se utiliza para mostrar los elementos HTTML en la pantalla incluyendo un diseño y variaciones en la visualizacion para diferentes dispositivos y tamaños de pantalla 
+
+=========================
+Reglas de CSS 
+Una consta de un selector y un bloque de declaracion 
+
+h1{
+    color: crimson; font-size: xx-large;
+}
+
+
+Tipos de selectores
+    - Etiquetas. h1, body, imag, p, h5...
+    - Clases .contenedor 
+    - Id #contedorAbuelo
+    - * Nos permite darle estilos a los elementos que sobran
+
+*/
+/* #button2{
+    color:red;
+    background-color: chartreuse;
+}
+
+.boton{
+    color:blueviolet;
+    background-color: darkcyan;
+} */
+
+
+/* Formas de insertar CSS
+    -CSS interno
+    -CSS en linea
+    -CSS externo
+
+    ---- CSS interno.
+    Se peede usar una hoja de estilo interj0 si una pagina HTTMl tiene un estilo unico.Se define dentro del elemento <style> en el <head>
+
+    ---- CSS en linea.
+    Se utiliza para aplicar estilos en la misma linea de codigo a un solo elemento
+
+    Por ejemplo:
+    <h1 style="color: blue;">Hola me llamo h1</h1>
+    <p style="background-color: fuchsia;">Yo soy el parrafo</p>
+
+    ---- CSS externo.
+    Hace referencia a una hoja de estilos externa con extension .css
+    Se debe incluir una referencia al archivo de hoja de estilos en el <head> de nuestras paginas HTML con el siguiente elemento
+
+    <link rel="styleheet" href="/ubucacionHojaDeEstilo.css">
+
+=========================================
+*********Colores de CSS******************
+Los colores especifican utilizando nombres de colores prefenidos o valores RGB, HEX, HSL, RGBA,HSLA
+
+CSS admite 140 nombres de colores estandar
+
+
+
+
+
+h1{
+    color: rgb(108,52,131);
+}
+
+
+
+
+
+--- Color de Fondo CSS
+Permite establecer el color de fonde de los elementos se accede a ella mediante la propiedad
+backgraund-color:nombre/hex/rgb
+*/
+
+
+/* h1{
+    color: rgb(2,84,100);
+}
+p{
+    background-color: #e57c23;
+} */
+/* ---Color de Texto CSS 
+Puede establecer el color del  texto de un elemento.
+
+
+---------Color de borde--------
+Permite establecer el color de los bordes
+
+
+h1{
+    border-style: solid;
+    border-color:brown;
+}
+p{
+    border-style: solid;
+    border-color:darkslategrey;
+} 
+======================================================
+***************Fondo de CSS (Background)*****************
+Las propiedades de fonde de CSS se utilizan para agregar efectos de fondo a los elementos.
+
+    background-color
+    background-image
+    backgraund-repeat
+    backgraund-attachment
+    backgraund-position
+
+
+-----background-color
+Esta propieedad especifica el color de fondo de un elemento
+
+h1{
+    background-color:nombreColor/RGB/HEX
+}
+-----background-image
+Esta propiedad espesifica una imagen para usar como fondo de un elemento. de manera predeterminada la imagen se va repetir para que cubra todo el elemento.
+Se accede miediante la propiedad::
+background-image: url(rutaDeImage);
+
+-------Repeticion de imagnes de fondo todas las imagenes se de manera horizontal y vertical
+Si queremos que se repita solo horizontalmente ocupamos la propiedad background-repeat:repeat-x:
+Si queremos que se repita solo verticalmente utilizaremos la propiedad background-repeat:repeat-y;
+
+body{
+    background-image:url(/assets/Images/277356747_501641341630111_2430251017443094526_n.jpg);
+    background-repeat:repeat-y;
+}
+
+---Posicion de la imagen de fondo
+Se utiliza para especificar la posicion de la imagen de fondo y para ello se acce mediante la propiedad background-position
+
+
+body{
+    background-image:url(/assets/Images/277356747_501641341630111_2430251017443094526_n.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+=======================================================
+**************Bordes CSS******************************
+La propiedad border permite espesificar el estilo, el ancho, el alto y el color de borde de un elenmento
+----Estilo de borde
+border-style y especifica que tipo de borde se muestra
+Se permite los siguientes valores:
+    - dotted : borde punteado
+    - dashed : borde discontinuo
+    - solid : borde sólido
+    - double : borde doble
+    - groove : borde ranurado 3D
+    - ridge : borde de inserción 3D
+    - inset : borde de inserción 3D
+    - outset : borde inicial 3D
+    - none : sin borde
+    - hidden : borde oculto
+
+
+h2
+{
+    border-style:dotted;
+    border-color: blueviolet;
+}
+---- Ancho del borde
+border-width especifica el ancho de los cuatro bordes 
+Tenemos tres valores predefinidos que son thin , medium o thick
+
+
+h2
+{
+    border-style:dotted;
+    border-color: blueviolet;
+    border-width: 20px;
+    
+}
+---- Bordes redondeados 
+border-radius se usa para agregar bordes redondeados a un elemento
+
+
+
+h2
+{
+    border-style:solid;
+    border-color: blueviolet black red goldenrod;
+    border-width: 20px;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+============================================================
+********** Texto en CSS***********************************
+La propiedad "color" establece el color de texto
+
+text-alig
+
+h2{
+    color:blueviolet;
+    text-aling:end;
+}
+p{
+    color:gold;
+    text-aling:center;
+}
+#parrafo{
+    color:maroon;
+    text-aling:justify;
+}
+--- Decoracion de texto
+    text-decoration
+
+
+
+h2{
+    color:blueviolet;
+    text-align:end;
+    text-decoration-line: overline;
+    text-decoration-style: double;
+    text-decoration-color: darkgoldenrod;
+}
+p{
+    color:gold;
+    text-align:center;
+    text-decoration-line: line-through;
+    text-decoration-style: dashed;
+    text-decoration-color: crimson
+}
+#parrafo{
+    color:maroon;
+    text-align:justify;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red
+}
+
+a{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+text-decoration: none; elimina la decuracion de texto que aparece en los enlaces <a> 
+--- Transformacion de texto CSS
+text-transform se utiliza para especificar si todas las letras seran mayusculas o minusculas es decir transforma las letras
+
+podemos transformar a mayusculas con 
+*/
+
+/* h2{
+    color:blueviolet;
+    text-transform: uppercase;
+}
+p{
+    color:gold;
+    text-transform: lowercase;
+}
+#parrafo{
+    color:maroon;
+    text-transform:capitalize;
+} */
+
+/* Fuentes
+    Serif
+    Sens-serif    Poseen lineas limpias
+
+    Monoespaciada Todas las letras tienen el  mismo ancho fijo
+
+    Cursiva Imitar la escritura humana
+
+    Fantasia Son fuentes decorativas, divertidas
+
+    ----- Propiedad de familias de fuentes CSS
+
+    font-family .... se uitiliza para especificar la fuenta de un text. el nombre de la fuente que es mas de una palabra debe escribirse entre comillas 
+----- Estilos de fuentes 
+    font-style. Esta propiedad modifica el estilo de la fuente y tiene tres valores
+
+    Normal
+    Cursiva (italic)
+    Oblicuo (texto inclinado)
+
+---Grosor de fuente
+font-weight la cual especifica el grosor de fuente.
+
+    -lighter
+    -normal
+    -bold
+    -bolder
+    -´personalizado
+--- Tamaño de fuente
+font-siza no permite establece el tamaño del texto
+
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: lighter;
+   
+
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-weight: 900;
+    font: size 20px;;
+
+}
+#parrafo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 12px;
+
+}
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: style px;
+}
+---- Familias de fuentes externas 
+
+
+#parrafo{
+    
+    font-size: 32pxpx;
+    font-family: 'Noto Sans', sans-serif;
+}
+==============================
+El modelo de caja de CSS
+Es una caja que envuelve cada elemento HTML. Consiste en márgenes, bordes, rellenos y el contenido.
+
+--Parte de una caja de CSS
+    -Contenido de la caja (content box). El área donde se muestra el contenido.
+    -Relleno de la caja (padding box). Es el espacio en blanco alrededor del contenido.
+    -Borde de caja (border box). Envuelve el contenido y el relleno.
+    -Margen de caja (margin). Es la capa externa, envuelve el contenido, el relleno y el borde.
+
+*/
+
+button{
+    border-style: solid;
+    border-color: blue;
+    padding: 10px;
+    margin: 8px;
+}
